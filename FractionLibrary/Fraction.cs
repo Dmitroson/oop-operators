@@ -169,26 +169,22 @@ namespace FractionLibrary
 
         public static bool operator >(Fraction obj1, Fraction obj2)
         {
-            if ((double)obj1 > (double)obj2) return true;
-            else return false;
+            return (double)obj1 > (double)obj2;
         }
 
         public static bool operator <(Fraction obj1, Fraction obj2)
         {
-            if ((double)obj1 < (double)obj2) return true;
-            else return false;
+            return (double)obj1 < (double)obj2;
         }
 
         public static bool operator >=(Fraction obj1, Fraction obj2)
         {
-            if ((double)obj1 >= (double)obj2) return true;
-            else return false;
+            return(double)obj1 >= (double)obj2;
         }
 
         public static bool operator <=(Fraction obj1, Fraction obj2)
         {
-            if ((double)obj1 <= (double)obj2) return true;
-            else return false;
+            return (double)obj1 <= (double)obj2;
         }
 
         public static explicit operator double(Fraction obj)
