@@ -15,8 +15,9 @@ namespace ConsoleDemonstration
             Fraction b = new Fraction(3, 5);
             Fraction c = new Fraction(4);
             Fraction d = new Fraction();
+            Fraction f = new Fraction(1.778);
 
-            Fraction result = 2 * ((-a) + b - c) / (a++) / 2;
+            Fraction result = 2 * ((-a) + b - c) / (a++) / 2 + f;
             Console.WriteLine(result);
             Console.WriteLine();
 

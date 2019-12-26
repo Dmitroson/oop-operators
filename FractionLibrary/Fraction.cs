@@ -25,10 +25,17 @@ namespace FractionLibrary
             Denominator = 1;
         }
 
-        //public Fraction(double value)
-        //{
-
-        //}
+        public Fraction(double value)
+        {
+            long denom = 0;
+            while(value != Math.Round(value))
+            {
+                value *= 10;
+                denom++;
+            }
+            Numerator = (long)value;
+            Denominator = (long)Math.Pow(10, denom);
+        }
 
         public static Fraction operator +(Fraction obj)
         {
